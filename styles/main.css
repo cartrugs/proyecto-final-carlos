@@ -64,6 +64,32 @@ header a:visited {
   color: var(--light);
 }
 
+/* logo styles */
+.logo {
+  width: 7em;
+  margin: 15px 0px -5px 0px;
+  animation-name: logoRun;
+  animation-duration: 3.5s;
+  animation-direction: reverse;
+  position: relative;
+}
+
+@keyframes logoRun {
+  0% {
+    right: 0%;
+  }
+  10% {
+    right: 125px;
+  }
+  50% {
+    right: 250px;
+  }
+}
+
+.logo-top {
+  padding-top: 20px;
+}
+
 /* buttons styles */
 button {
   font-size: 1em;
@@ -341,28 +367,6 @@ header.portfolio {
   margin-bottom: 40px;
 }
 
-/* logo styles */
-.logo {
-  width: 7em;
-  margin: 15px 0px -5px 0px;
-  animation-name: logoRun;
-  animation-duration: 3.5s;
-  animation-direction: reverse;
-  position: relative;
-}
-
-@keyframes logoRun {
-  0% {
-    right: 0%;
-  }
-  10% {
-    right: 125px;
-  }
-  50% {
-    right: 250px;
-  }
-}
-
 /* main styles */
 main {
   display: flex;
@@ -443,6 +447,7 @@ h2.h2-portfolio {
 
 /* Biography */
 
+/* header.biography */
 header.biography {
   background-image: linear-gradient(
       0deg,
@@ -457,13 +462,15 @@ header.biography {
   margin-bottom: 6em;
 }
 
-.logo-top {
-  padding-top: 20px;
-}
-
+/* main styles */
 main {
   flex: 60%;
   margin-bottom: 80px;
+}
+
+/* article styles */
+article {
+  margin-bottom: 60px;
 }
 
 article p {
@@ -473,18 +480,32 @@ article p {
   font-weight: bolder;
   color: var(--black);
 }
-article {
-  margin-bottom: 60px;
-}
 
-ul {
-  text-align: center;
+/* div.programs styles */
+div.programs {
   margin-bottom: 60px;
-  list-style: none;
+  text-align: center;
   font-size: 1.3em;
   font-weight: bold;
+
 }
 
+div.programs a {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--go);
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0.7em 0;
+}
+
+div.programs a:hover {
+  color: var(--pink);
+  transform: scale(1.5);
+}
+
+
+/* aside styles */
 aside {
   flex: 50px;
   font-size: 18px;
@@ -528,23 +549,7 @@ aside ul {
   font-weight: lighter;
 }
 
-p ul {
-  font-size: 14px;
-  margin-bottom: 20px;
-}
-
-.container .natureProfile {
-  background: url("../assets/media/biography/wallpaperflare.com_wallpaper.webp")
-    no-repeat;
-  background-position: center;
-  width: 100%;
-  max-height: min-content;
-  height: 500px;
-  border-radius: 10px;
-  background-size: cover;
-  margin-bottom: 40px;
-}
-
+/* section.inf-cnt(información de contacto) */
 section.inf-cnt {
   background-color: var(--grey);
 }
@@ -568,11 +573,9 @@ section.inf-cnt {
   color: var(--pink);
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+/* id styles */
 
+/* #name styles */
 #name {
   font-weight: bold;
   font-size: 44px;
@@ -582,6 +585,7 @@ section.inf-cnt {
 
 /* Contacto*/
 
+/* header.cnt styles */
 header.cnt {
   background-image: linear-gradient(
       0deg,
@@ -597,19 +601,15 @@ header.cnt {
   margin-bottom: 8em;
 }
 
+/* .h2-contact styles */
 .h2-contact {
   text-align: center;
   font-size: 3em;
   color: var(--black);
 }
 
-form.user p {
-  font-size: 1.3em;
-  font-weight: bold;
-  padding-top: 5px;
-}
-
-.user {
+/* form.user styles */
+form.user {
   background-color: var(--grey);
   border-radius: 15px;
   width: max-content;
@@ -619,7 +619,13 @@ form.user p {
   margin-bottom: 50px;
 }
 
-.user input {
+form.user p {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+form.user input {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -634,6 +640,7 @@ form.user p {
   margin: 1.3em 0;
 }
 
+/* button styles */
 button {
   font-size: 1em;
   font-weight: bold;
@@ -646,14 +653,7 @@ button {
   margin: 1.3em 0;
 }
 
-.ipt ::placeholder {
-  color: var(--pink);
-}
-
-.rgt ::placeholder {
-  color: var(--pink);
-}
-
+/* lorem styles */
 .lorem {
   display: flex;
   font-size: 1.5em;
@@ -665,20 +665,8 @@ button {
   margin: 0.3em 0 2em 0;
 }
 
-.news {
-  font-size: 2em;
-  color: var(--black);
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-form.register p {
-  font-size: 1.3em;
-  font-weight: bold;
-  padding-top: 5px;
-}
-
-.register {
+/* form.register styles */
+form.register {
   background-color: var(--grey);
   border-radius: 15px;
   width: max-content;
@@ -688,7 +676,13 @@ form.register p {
   margin-bottom: 50px;
 }
 
-.register input {
+form.register p {
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+form.register input {
   display: flex;
   flex-direction: column;
   font-size: 1em;
@@ -702,11 +696,20 @@ form.register p {
   margin: 1.3em 0;
 }
 
+/* news styles */
+.news {
+  font-size: 2em;
+  color: var(--black);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 p.news {
   font-size: 1.5em;
   color: var(--font-white);
 }
 
+/* terms and conditions styles */
 label {
   color: var(--font-white);
   font-size: 1em;
@@ -741,6 +744,15 @@ fieldset div {
 
 .register fieldset div label.accept {
   width: 100%;
+}
+
+/* placeholders styles */
+.ipt ::placeholder {
+  color: var(--pink);
+}
+
+.rgt ::placeholder {
+  color: var(--pink);
 }
 
 /* Media queries*/
