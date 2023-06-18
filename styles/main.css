@@ -60,10 +60,6 @@ header a:hover {
   transform: scale(1.1);
 }
 
-header a:visited {
-  color: var(--light);
-}
-
 /* logo styles */
 .logo {
   width: 7em;
@@ -131,7 +127,6 @@ nav.items {
   width: 100%;
   max-height: min-content;
   height: 500px;
-  border-radius: 10px;
   background-size: cover;
 }
 
@@ -362,7 +357,6 @@ header.portfolio {
     url("../assets/media/portfolio/peakpx.webp");
   max-height: min-content;
   height: 500px;
-  border-radius: 10px;
   background-size: cover;
   margin-bottom: 40px;
 }
@@ -457,7 +451,6 @@ header.biography {
     url("../assets/media/biography/wallpaperflare.com_wallpaper.webp");
   max-height: min-content;
   height: 500px;
-  border-radius: 10px;
   background-size: cover;
   margin-bottom: 6em;
 }
@@ -522,7 +515,7 @@ aside h2 {
   color: var(--font-white);
 }
 
-aside h3 {
+aside h3 a {
   background-color: var(--search);
   color: var(--light-blue);
   border-radius: 5px;
@@ -531,6 +524,9 @@ aside h3 {
   text-align: center;
   margin-bottom: 20px;
   padding: 3px;
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
 }
 
 aside h4,
@@ -595,9 +591,7 @@ header.cnt {
     url("../assets/media/contacto/1_fpmWsIFOXG3lCVxMCqp2mw.webp");
   max-height: min-content;
   height: 500px;
-  border-radius: 10px;
   background-size: cover;
-  border-radius: 10px;
   margin-bottom: 8em;
 }
 
