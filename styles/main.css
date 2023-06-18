@@ -11,30 +11,36 @@
   --search: #7c0c3b;
 }
 
+/* Reset golobal styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Body styles */
 body {
   margin: 0;
   padding: 0;
   font-family: "Josefin Sans", sans-serif, "Century Gothic";
 }
 
+/* h2 styles */
 h2 .h2-index {
   font-size: 2.5em;
 }
 
+/* h3 styles */
 h3 {
   font-size: 2em;
 }
 
+/* h4 styles */
 h4 {
   font-size: 1.25em;
 }
 
+/* header styles */
 header.container {
   display: flex;
   flex-direction: column;
@@ -58,6 +64,7 @@ header a:visited {
   color: var(--light);
 }
 
+/* buttons styles */
 button {
   font-size: 1em;
   font-weight: bold;
@@ -75,6 +82,7 @@ button:hover {
   transform: scale(1.3);
 }
 
+/* nav styles */
 nav.items {
   border-radius: 10px;
   display: flex;
@@ -86,6 +94,7 @@ nav.items {
   margin-bottom: 2em;
 }
 
+/* container styles */
 .container {
   margin: 0 auto;
 }
@@ -100,6 +109,7 @@ nav.items {
   background-size: cover;
 }
 
+/* nature-every text style */
 .nature-every {
   word-wrap: break-word;
   min-width: 200px;
@@ -114,16 +124,19 @@ nav.items {
   text-align: center;
 }
 
+/* hero-header text style */
 .hero-header {
   font-size: 1.8em;
   text-align: center;
 }
 
+/* choose-container */
 .choose-container {
   margin-bottom: 4em;
 }
 
-.enviroment {
+/* environment styles */
+.environment {
   width: 100%;
   max-width: max-content;
   min-width: min-content;
@@ -135,11 +148,12 @@ nav.items {
   height: auto;
 }
 
-.enviroment h3,
+.environment h3,
 p {
   color: var(--font-white);
 }
 
+/* desert styles */
 .desert {
   background-image: linear-gradient(
       0deg,
@@ -148,6 +162,8 @@ p {
     ),
     url("../assets/media/home/274314.jpg");
 }
+
+/* air styles */
 .air {
   background-image: linear-gradient(
       0deg,
@@ -157,6 +173,7 @@ p {
     url("../assets/media/home/271298.jpg");
 }
 
+/* water styles */
 .water {
   background-image: linear-gradient(
       0deg,
@@ -166,6 +183,7 @@ p {
     url("../assets/media/home/sea-side-4k-h1.jpg");
 }
 
+/*rocks styles */
 .rocks {
   background-image: linear-gradient(
       0deg,
@@ -175,24 +193,25 @@ p {
     url("../assets/media/home/mountain-minimalist-drawing-wallpaper-2560x1080_14.jpg");
 }
 
+/* inspire text style */
 .inspire {
   color: var(--black);
   font-weight: bold;
   margin-bottom: 20px;
 }
 
+/* a.instagran styles */
 a.instagram :hover {
   box-shadow: 1px 1px 17px rgba(235, 43, 104, 0.9);
   border-radius: 150px;
 }
 
+/* footer styles */
 footer.bottom {
   text-align: center;
 }
 
-.bottom h3,
-p,
-a {
+.bottom h3, p, a {
   margin-bottom: 10px;
 }
 
@@ -211,6 +230,8 @@ a {
   box-shadow: 1px 1px 17px rgba(235, 43, 104, 0.7);
 }
 
+/* id styles */
+/* #hero styles */
 #hero {
   display: flex;
   flex-direction: column;
@@ -224,6 +245,7 @@ a {
   text-align: center;
 }
 
+/* #wild styles */
 #wild {
   display: flex;
   flex-direction: column;
@@ -237,6 +259,7 @@ a {
   text-align: center;
 }
 
+/* #dry-air-water-rocks */
 #dry-air-water-rocks {
   background-color: var(--black);
   color: var(--go);
@@ -255,6 +278,7 @@ a {
   text-align: center;
 }
 
+/* #free styles */
 #free .container {
   text-align: center;
   font-size: 2em;
@@ -262,6 +286,7 @@ a {
   margin-bottom: 80px;
 }
 
+/* # awesome styles */
 #awesome .container {
   display: flex;
   flex-direction: column;
@@ -295,6 +320,13 @@ a {
 
 /*  Portfolio */
 
+/* body.container-portfolio styles */
+body.container-portfolio {
+  margin: 0 auto;
+  display: block;
+}
+
+/* header styles */
 header.portfolio {
   background-image: linear-gradient(
       0deg,
@@ -309,6 +341,7 @@ header.portfolio {
   margin-bottom: 40px;
 }
 
+/* logo styles */
 .logo {
   width: 7em;
   margin: 15px 0px -5px 0px;
@@ -330,6 +363,7 @@ header.portfolio {
   }
 }
 
+/* main styles */
 main {
   display: flex;
   padding: 5px;
@@ -341,18 +375,41 @@ main {
   margin-bottom: 50px;
 }
 
+/* row styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* fotos styles */
 .fotos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
   width: 100%;
 }
 
 .fotos img {
   margin-top: 5px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px;
 }
 
+.fotos img:hover {
+  transform: scale(1.5);
+  border-radius: 5px;
+}
+
+/* audio styles */ 
 .audio {
   margin-top: 6em;
 }
 
+/* video styles */
 .video {
   margin: 6em;
   position: relative;
@@ -373,43 +430,15 @@ main {
   height: 100%;
 }
 
+/* footer styles */
 footer {
   text-align: center;
 }
 
+/* h2 styles */
 h2.h2-portfolio {
   font-size: 5em;
   margin-bottom: 1.5em;
-}
-
-body.container-portfolio {
-  margin: 0 auto;
-  display: block;
-}
-
-.fotos img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin: 10px;
-}
-
-.fotos {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.fotos img:hover {
-  transform: scale(1.5);
-  border-radius: 5px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 /* Biography */
@@ -761,7 +790,7 @@ fieldset div {
 }
 
 @media (min-width: 768px) {
-  .enviroment {
+  .environment {
     width: 167px;
     margin: 0 0.5em;
     height: 600px;
@@ -772,7 +801,7 @@ fieldset div {
 /* min-width: 960px */
 
 @media (min-width: 960px) {
-  .enviroment {
+  .environment {
     width: 300px;
     margin: 0 0.5em;
     height: 600px;
